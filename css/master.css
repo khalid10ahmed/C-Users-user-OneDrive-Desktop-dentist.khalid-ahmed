@@ -1,0 +1,292 @@
+:root {
+    --font-color:#43b9dc;
+    --background:#34d3b4;
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7%;
+    box-shadow: 0 1rem 1rem rgb(0, 0, 0,.1);
+    background: white;
+}
+.logo {
+    font-size: 3rem;
+    color: black;
+}
+.logo span {
+    color: var(--font-color);
+}
+nav a ,.footer-nav a , .social-nav {
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--font-color);    
+}
+nav a:hover {
+    color: blue;
+}
+.icon  i {
+    font-size: 2rem;
+    color:var(--font-color) ;
+    margin-left: 1rem;
+}
+.icon  i:hover{
+    color: blue;
+}
+
+#menu-bar {
+    display: none;
+    font-size:1.5rem ;
+    color: var(--font-color);
+}
+/* header */
+.doctor {
+    height: 100vh;
+    background: url(../imge/pexels-photo-6627315.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:75px ;
+    width: 100%;
+}
+.main-tex {
+    width: 50%;
+    top: 220px;
+    position: absolute;
+    padding: 0 2rem;
+    text-align: center;
+}
+.main-tex h2 {
+    font-size:40px ;
+    color: white;
+}
+.main-tex a {
+ padding: 1rem 4rem;
+ background: var(--background);
+ border-radius: 10px;
+ color: white;
+ display: inline-block;
+ margin-top: 1.5rem;
+ border: 1px solid white;
+ 
+}
+/* section */
+.services {
+    min-height: 50vh;
+    background: linear-gradient(#43b9dc,#34d3b4);
+    padding: 2rem 7%;
+}
+ .services #heading {
+    font-size: 30px;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+ }
+ .services .box-serv {
+    padding: 3rem 0;
+    box-shadow: 0 1rem 1rem rgb(0, 0, 0,.1);
+    flex: 1 1 200px;
+    margin: 0 15px;
+    text-align: center;
+ }
+ .box-serv i {
+    color: white;
+    padding: .5rem 0;
+    font-size: 2rem;
+
+ }
+ .services .box-serv h2 {
+    color: white;
+    padding: 1rem 0;
+    font-size: 2rem;
+ }
+ .services .box-serv p {
+    color: white;
+    font-size: 1rem;
+ }
+ /* services */
+ .gallary {
+    background: var(--background);
+    padding: 2rem 9%;
+    min-height: 100vh;
+ }
+ .gallary .gall-head {
+    padding: 2rem 0;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+ }
+ .box-gall {
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+ }
+ .gallary .gall-head span {
+    color: var(--font-color);
+ }
+ .gallary .box-gall img {
+    width: 100%;
+    margin-bottom: -5px;
+    opacity: .6;
+    transition: 1s;
+    transform: scale(1.1);
+ }
+ .gallary .box-gall img:hover {
+    opacity: 1;
+    transform: scale(1);
+ }
+/* gallry */
+.team {
+    padding: 10rem;
+}
+.team h2 {
+ font-size: 3rem;
+ text-align: center;
+ padding: 2rem;
+}
+.team h2 span {
+    color: var(--font-color)
+}
+.box-team  {
+ flex: 1 1 250px;
+}
+.box-team img {
+    width: 100%;
+    border-radius: 15px;
+}
+ .box-team h3 {
+    font-size:15px ;
+    padding: 1rem 0;
+}
+.box-team p {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.box-team .social i {
+  font-size: 2rem;
+  color: var(--font-color);
+  padding: 1rem 0;
+  margin-left: 1rem;
+}
+/* team */
+footer {
+    padding: 40px 0px ; 
+    background-color: #333;
+ }
+ footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+ }
+ 
+.social-nav {
+    display: flex;
+}
+.social-nav a {
+    margin-left: 10px;
+}
+.footer-nav {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+    #menu-bar {
+        display: initial;
+    }
+
+      nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background:var(--background);
+        padding: 1rem;
+        text-align: center;
+        height: 100vh;
+
+    }
+     nav a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        font-size: 2rem;
+        background: white;
+        border-radius: 10px;
+        width: 90%;
+
+    }
+    .main-tex {
+        width: 70%;
+        padding: 0;
+    }
+} */
+
+
